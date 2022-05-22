@@ -277,13 +277,32 @@ footer {
 
 @media screen and (max-width: 1084px) {
   body {
-    font-size: 20px;
+    font-size: 48px;
   }
   p {
     width: 90vw;
     text-align: justify;
+    font-size: 48px;
   }
   .under-element {
-    height: 650px;
+    height: 1800px;
+    width: 90vw;
+    box-shadow: 12px 12px 12px rgba(0,0,0,.4);
+    border-radius: 20px;
   }
+  .under-element img {
+    width: 95% !important;
+  }
+  .under-element iframe {
+    width: 95% !important;
+    height : 28%;
+  }
+  .link-img-text {
+    font-size: 48px !important;
+    padding-bottom: 10px;
+  }
+  .link-img-text img {
+    width: 48px !important;
+  }
+
 }
