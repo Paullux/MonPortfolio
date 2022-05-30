@@ -26,6 +26,8 @@ body {
 button {
   border: none;
   color: #fff;
+  width: 18vw;
+  height: 4vh;
   background-color: rgba(127,127,127,.5);
   box-shadow: 5px 5px 5px rgba(0,0,0,.4);
   font-size: 15pt;
@@ -295,7 +297,9 @@ footer {
   }
   button {
     width: 90vw;
+    height: 8vh;
     box-shadow: 12px 12px 12px rgba(0,0,0,.4);
+    border-radius: 20px;
     font-size: 48px !important;
   }
   .under-element {
