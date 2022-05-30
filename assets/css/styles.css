@@ -23,6 +23,15 @@ body {
   height: 620px;
   position:relative;
 }
+button {
+  border: none;
+  color: #fff;
+  background-color: rgba(127,127,127,.5);
+  box-shadow: 5px 5px 5px rgba(0,0,0,.4);
+  font-size: 15pt;
+  cursor: pointer;
+  border-radius: 10px;
+}
 h2 {
   text-align: left;
 }
@@ -283,6 +292,11 @@ footer {
     width: 90vw;
     text-align: justify;
     font-size: 48px;
+  }
+  button {
+    width: 90vw;
+    box-shadow: 12px 12px 12px rgba(0,0,0,.4);
+    font-size: 48px !important;
   }
   .under-element {
     height: 1800px;
