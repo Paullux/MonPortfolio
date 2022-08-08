@@ -23,11 +23,24 @@ body {
   height: 620px;
   position:relative;
 }
-button {
+#open_preferences_center {
   border: none;
   color: #fff;
   width: 18vw;
-  height: 4vh;
+  height: 9vh;
+  background-color: rgba(127,127,127,.5);
+  box-shadow: 5px 5px 5px rgba(0,0,0,.4);
+  font-size: 15pt;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#open_mail_center {
+  border: none;
+  color: #fff;
+  width: 18vw;
+  height: 9vh;
+  margin-left: auto;
+  margin-right: auto;
   background-color: rgba(127,127,127,.5);
   box-shadow: 5px 5px 5px rgba(0,0,0,.4);
   font-size: 15pt;
@@ -286,6 +299,13 @@ footer {
     box-shadow: -40vmin 0 5.260421957181702vmin currentColor;
 }
 
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 @media screen and (max-width: 1084px) {
   body {
     font-size: 48px;
@@ -295,7 +315,18 @@ footer {
     text-align: justify;
     font-size: 48px;
   }
-  button {
+  #open_preferences_center {
+    width: 90vw;
+    height: 8vh;
+    box-shadow: 12px 12px 12px rgba(0,0,0,.4);
+    border-radius: 20px;
+    font-size: 48px !important;
+  }
+  #open_mail_center img {
+    width: 75vw;
+    height: 6vh;
+  }
+  #open_mail_center {
     width: 90vw;
     height: 8vh;
     box-shadow: 12px 12px 12px rgba(0,0,0,.4);
