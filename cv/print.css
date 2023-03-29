@@ -1,0 +1,488 @@
+:root {
+    --greybackground: #edeeef;
+    --greydark: #595959;
+    --greylight: #8c8c8c;
+    --greytext: #353535;
+    --white: #ffffff;
+    --dark: #000000;
+}
+
+
+@page {
+    size: A4;
+    margin: 5mm;
+}
+
+@page :blank {
+    @top-center { content: "This page is intentionally left blank." }
+}
+
+h1, h2, h3, h4, h5 {
+    page-break-after: avoid;
+}
+
+
+table, figure {
+    page-break-inside: avoid;
+}
+
+h1 { 
+    string-set: doctitle content(); 
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    background-color: white;
+    overflow-wrap: break-word;
+    font-size: 0.9em;
+}
+
+.monCVTot {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    height: 100%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 86% 16%;
+    height: 8vh;
+    width:105%;
+    background-color: var(--greybackground);
+    padding-top: 50px;
+}
+
+h1 {
+    margin-top: -5%;
+    padding-left: 2%;
+    padding-right: auto;
+    color: var(--greydark);
+    font-size: min(3vw, 3em);
+}
+
+.header .separateur {
+    margin-top: -6%;
+    margin-left: 2%;
+    background-color: var(--greylight);
+    width: 8vw;
+    height: 3px;
+}
+
+.header h2 {
+    margin-top: -3%;
+    color: var(--greylight);
+    font-size: min(2vw, 2em);
+    padding-left: 2%;
+}
+
+.maPP {
+    width: 75%;
+    margin-right: 0;
+    margin-top: -35px;
+    border-radius: 25%;
+}
+
+.monCV {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    padding-right: 20px;
+}
+
+.left {
+    width:100%;
+    height: 100%;
+    background-color: var(--greybackground);
+    padding-left: 10px;
+}
+
+.left h3 {
+    padding-top: 20px;
+    color: var(--greydark);
+    text-align: center;
+}
+
+.profil p {
+    color: var(--greytext)
+}
+
+.profil i {
+    color: var(--greydark);
+}
+
+.lang p {
+    color: var(--greytext)
+}
+
+.lang span {
+    display: block;
+}
+
+.socialnetwork p {
+    color: var(--greytext);
+}
+
+.socialnetwork i {
+    color: var(--greydark);
+    margin-right: 10px;
+}
+
+.logiciel {
+    color: var(--greytext);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -20px;
+}
+
+.niveau1 {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+.niveau2 {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+.niveau3 {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+.niveau4 {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+.niveau5 {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+
+.softname {
+    margin-top: 12px;
+    margin-left: -10px;
+    width: 40%;
+}
+
+.autocad .niveau1 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.autocad .niveau2 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.autocad .niveau3 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.autocad .niveau4 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.autocad .niveau5 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+    margin-right: 5%;
+}
+
+.pvsyst .niveau1 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.pvsyst .niveau2 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.pvsyst .niveau3 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.pvsyst .niveau4 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.pvsyst .niveau5 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+    margin-right: 5%;
+}
+
+.sketchup .niveau1 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.sketchup .niveau2 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.sketchup .niveau3 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.sketchup .niveau4 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.sketchup .niveau5 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+    margin-right: 5%;
+}
+
+.lisepv .niveau1 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.lisepv .niveau2 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.lisepv .niveau3 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.lisepv .niveau4 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+}
+
+.lisepv .niveau5 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+    margin-right: 5%;
+}
+
+.excel .niveau1 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.excel .niveau2 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.excel .niveau3 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.excel .niveau4 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.excel .niveau5 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+    margin-right: 5%;
+}
+
+.powerpoint .niveau1 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.powerpoint .niveau2 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.powerpoint .niveau3 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+}
+
+.powerpoint .niveau4 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+}
+
+.powerpoint .niveau5 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+    margin-right: 5%;
+}
+
+.vscode .niveau1 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.vscode .niveau2 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.vscode .niveau3 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.vscode .niveau4 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.vscode .niveau5 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+    margin-right: 5%;
+}
+
+.intellij .niveau1 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.intellij .niveau2 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.intellij .niveau3 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.intellij .niveau4 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+}
+
+.intellij .niveau5 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+    margin-right: 5%;
+}
+
+.hobby li {
+    color: var(--greytext);
+    padding-left: -10%;
+    padding-right: 1%;
+}
+
+.right {
+    background-color: var(--white);
+    width: 100%;
+    height: max(100%, 100vh);
+}
+
+.right h3 {
+    text-align: center;
+    color: var(--greydark);
+}
+
+.xp {
+    width: 100%;
+}
+
+.xpent {
+    width: 100%;
+    color: var(--greytext);
+
+    text-overflow: clip;
+    height: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.entreprise {
+    padding-left: 5%;
+    width: 90;
+    text-overflow: clip;
+}
+
+.date {
+    font-size: small;
+    width: 100%;
+    margin-top: 25%;
+    height: 50px;
+}
+
+.etu {
+    width: 100%;
+    margin-top: 0;
+}
+
+.tablexp {
+    width: 100%;
+    /*padding: 8px;*/
+    display: table;
+}
+
+.xpentreprise {
+    display: table-row;
+    color: var(--greytext);
+}
+
+.xpentreprise p {
+    display: table-cell;
+    padding: 10px;
+    font-size: small;
+    margin-top: -25px;
+}
+
+.xpentreprise p span{
+    display: block;
+}
+
+.formation {
+    display: table-row;
+    color: var(--greytext);
+}
+
+.formation p {
+    display: table-cell;
+    padding: 10px;
+}
+
+.formation p span{
+    display: block;
+}
+
+.year {
+    margin-top: -25%;
+}
+
+.titre {
+    height: 50px;
+    margin-left: 5%;
+}
+
+.diplome {
+    color: var(--greytext)
+}

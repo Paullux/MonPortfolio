@@ -63,6 +63,10 @@ a:visited {
   text-decoration: inherit;
 }
 
+.cv {
+  text-decoration: none;
+}
+
 .codesource {
   position:absolute;
   display: flex;
