@@ -1,0 +1,655 @@
+:root {
+    --greybackground: #edeeef;
+    --greydark: #595959;
+    --greylight: #a6a6a6;
+    --greytext: #8c8c8c;
+    --white: #ffffff;
+    --dark: #353535;
+}
+
+body {
+    width: min(820px, 100vw);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    background-color: var(--dark);
+    overflow-wrap: break-word;
+}
+
+.monCVTot {
+    display: grid;
+    grid-template-columns: 25% 85%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 86% 16%;
+    height: 10vh;
+    width:100%;
+    background-color: var(--greybackground);
+    padding-top: 50px;
+}
+
+h1 {
+    margin-top: -5%;
+    padding-left: 2%;
+    padding-right: auto;
+    color: var(--greydark);
+    font-size: min(3vw, 3em);
+}
+
+.header .separateur {
+    margin-top: -6%;
+    margin-left: 2%;
+    background-color: var(--greylight);
+    width: 8vw;
+    height: 3px;
+}
+
+.header h2 {
+    margin-top: -3%;
+    color: var(--greylight);
+    font-size: min(2vw, 2em);
+    padding-left: 2%;
+}
+
+.maPP {
+    width: 75%;
+    margin-right: 70px;
+    margin-top: -30px;
+    border-radius: 25%;
+}
+
+.monCV {
+    width: 100%;
+    height: min(100%, 100vh);
+    height: auto;
+    padding-right: 20px;
+}
+
+.left {
+    width:100%;
+    height: max(100%, 100vh);
+    background-color: var(--greybackground);
+    padding-left: 5%;
+    padding-right: 8%;
+}
+
+.left h3 {
+    padding-top: 20px;
+    color: var(--greydark);
+    text-align: center;
+}
+
+.profil p {
+    color: var(--greytext)
+}
+
+.profil i {
+    color: var(--greydark);
+}
+
+.lang p {
+    color: var(--greytext)
+}
+
+.lang span {
+    display: block;
+}
+
+.socialnetwork p {
+    color: var(--greytext);
+}
+
+.socialnetwork i {
+    color: var(--greydark);
+    margin-right: 10px;
+}
+
+.logiciel {
+    color: var(--greytext);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -20px;
+}
+
+.niveau1 {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+.niveau2 {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+.niveau3 {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+.niveau4 {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+.niveau5 {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+.softname {
+    margin-top: 12px;
+    width: 40%;
+}
+
+.autocad .niveau1 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.autocad .niveau2 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.autocad .niveau3 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.autocad .niveau4 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.autocad .niveau5 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+    margin-right: 5%;
+}
+
+.pvsyst .niveau1 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.pvsyst .niveau2 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.pvsyst .niveau3 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.pvsyst .niveau4 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.pvsyst .niveau5 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+    margin-right: 5%;
+}
+
+.sketchup .niveau1 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.sketchup .niveau2 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.sketchup .niveau3 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.sketchup .niveau4 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.sketchup .niveau5 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+    margin-right: 5%;
+}
+
+.lisepv .niveau1 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.lisepv .niveau2 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.lisepv .niveau3 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.lisepv .niveau4 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+}
+
+.lisepv .niveau5 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+    margin-right: 5%;
+}
+
+.excel .niveau1 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.excel .niveau2 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.excel .niveau3 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.excel .niveau4 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.excel .niveau5 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+    margin-right: 5%;
+}
+
+.powerpoint .niveau1 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.powerpoint .niveau2 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.powerpoint .niveau3 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+}
+
+.powerpoint .niveau4 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+}
+
+.powerpoint .niveau5 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+    margin-right: 5%;
+}
+
+.vscode .niveau1 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.vscode .niveau2 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.vscode .niveau3 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.vscode .niveau4 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.vscode .niveau5 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+    margin-right: 5%;
+}
+
+.intellij .niveau1 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.intellij .niveau2 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.intellij .niveau3 {
+    border-color: var(--greydark);
+    background-color: var(--greydark);
+}
+
+.intellij .niveau4 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+}
+
+.intellij .niveau5 {
+    border-color: var(--greylight);
+    background-color: var(--greylight);
+    margin-right: 5%;
+}
+
+.hobby li {
+    color: var(--greytext);
+    padding-left: -10%;
+    padding-right: 1%;
+}
+
+.right {
+    background-color: var(--white);
+    width: 100%;
+    height: max(100%, 100vh);
+}
+
+.right h3 {
+    text-align: center;
+    color: var(--greydark);
+}
+
+.xp {
+    width: 100%;
+}
+
+.xpent {
+    width: 100%;
+    color: var(--greytext);
+
+    text-overflow: clip;
+    height: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.entreprise {
+    padding-left: 5%;
+    width: 90;
+    text-overflow: clip;
+}
+
+.date {
+    font-size: small;
+    width: 100%;
+    margin-top: 25%;
+    height: 50px;
+}
+
+.etu {
+    width: 100%;
+    margin-top: 0%;
+}
+
+.tablexp {
+    width: 100%;
+    /*padding: 8px;*/
+    display: table;
+}
+
+.xpentreprise {
+    display: table-row;
+    color: var(--greytext);
+}
+
+.xpentreprise p {
+    display: table-cell;
+    padding: 10px;
+    font-size: small;
+}
+
+.xpentreprise p span{
+    display: block;
+}
+
+.formation {
+    display: table-row;
+    color: var(--greytext);
+}
+
+.formation p {
+    display: table-cell;
+    padding: 10px;
+}
+
+.formation p span{
+    display: block;
+}
+
+.year {
+    margin-top: -25%;
+}
+
+.titre {
+    height: 50px;
+    margin-left: 5%;
+}
+
+.diplome {
+    color: var(--greytext)
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        width: 100vw;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .monCVTot {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .header .separateur {
+        margin-top: -4%;
+    } 
+
+    .header h2 {
+        margin-top: -1%;
+    } 
+
+    .maPP {
+       width: 50%;
+    }
+
+    .left, .right {
+        height: auto;
+        min-height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .table {
+        width: 100%;
+        /*padding: 8px;*/
+        display: table;
+    }
+
+    .formation {
+        display: table-row;
+    }
+    
+    .formation p {
+        display: table-cell;
+    }
+    .lang span {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        width: 100vw;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .monCVTot {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .maPP {
+        width: 60%;
+     }
+
+    .header .separateur {
+        margin-top: -4%;
+    } 
+
+    .header h2 {
+        margin-top: -1%;
+    } 
+    
+    .left, .right {
+        height: auto;
+        min-height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .table {
+        color: var(--greytext);
+    }
+
+    .formation {
+        color: var(--greytext);
+    }
+    
+    .formation p {
+        color: var(--greytext);
+    }
+    .lang span {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    body {
+        width: 100vw;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .monCVTot {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .left, .right {
+        height: auto;
+        min-height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    body {
+        width: 100vw;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }    
+    .monCVTot {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    h1 {
+        margin-top: -5%;
+        padding-left: 2%;
+        font-size: min(4vw, 4em);
+    }
+    
+    .header .separateur {
+        margin-top: -6%;
+        margin-left: 2%;
+        height: 3px;
+    }
+    
+    .header h2 {
+        margin-top: -3%;
+        font-size: min(3vw, 3em);
+        padding-left: 2%;
+    }
+
+    .maPP {
+        margin-left: -20%;
+    }
+
+    .left, .right {
+        height: auto;
+        min-height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+    
+    .table {
+        display: block;
+    }
+
+    .formation {
+        width: 100%;
+        /*padding: 8px;*/
+        display: block;
+    }
+    
+    .formation p {
+        display: inline-block;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .formation p span{
+        display: inline-block;
+    }
+    .lang span {
+        display: inline;
+    }
+}
