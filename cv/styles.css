@@ -105,8 +105,32 @@ h1 {
 }
 
 .socialnetwork i {
-    color: var(--greydark);
+    color: var(--greytext);
     margin-right: 10px;
+}
+
+/* unvisited link */
+.socialnetwork a:link {
+    text-decoration: none;
+    color: var(--greytext);
+}
+  
+/* visited link */
+.socialnetwork  a:visited {
+    text-decoration: none;
+    color: var(--greytext);
+}
+  
+/* mouse over link */
+.socialnetwork  a:hover {
+    text-decoration: none;
+    color: var(--greytext);
+}
+  
+/* selected link */
+.socialnetwork a:active {
+    text-decoration: none;
+    color: var(--greydark);
 }
 
 .logiciel {
