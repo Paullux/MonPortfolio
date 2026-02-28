@@ -31,7 +31,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/portfolio
+          images: ${{ secrets.DOCKERHUB_USERNAME }}/monportfolio
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
             type=ref,event=tag
