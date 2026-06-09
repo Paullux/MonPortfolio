@@ -80,6 +80,19 @@ a:visited {
   text-decoration: none;
 }
 
+.img-link {
+  display: inline-block;
+  text-decoration: none;
+}
+.img-link img {
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 6px;
+}
+.img-link:hover img {
+  opacity: 0.82;
+  box-shadow: 0 0 0 2px rgba(180, 110, 255, 0.7);
+}
+
 .codesource {
   position:absolute;
   display: flex;
