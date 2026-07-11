@@ -1,22 +1,36 @@
 html {
+  box-sizing: border-box;
   overflow-x: hidden;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+  margin: 0;
   overflow-x: hidden;
   background: rgba(12, 6, 30, 0.97);
   color: #fff;
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(16px, 1.4vw, 19px);
+  line-height: 1.5;
 }
 .mypage {
   z-index: 1;
+  position: relative;
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 18px clamp(14px, 3vw, 28px) 0;
 }
 .element {
-  display: flex;
-  align-items: center;
-  flex-flow: row wrap;
-  justify-content:space-around;
-  row-gap: 6ch;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  align-items: stretch;
+  gap: clamp(24px, 5vw, 64px) clamp(18px, 3vw, 34px);
 }
 .under-element {
   box-shadow: 0 4px 24px rgba(120, 60, 220, 0.25), 0 1px 0 rgba(180, 120, 255, 0.15) inset;
@@ -25,9 +39,11 @@ body {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(160, 100, 255, 0.2);
   border-radius: 14px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 620px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 620px;
+  padding: clamp(14px, 2vw, 18px);
   position:relative;
   transition: box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
 }
@@ -39,21 +55,22 @@ body {
 #open_preferences_center {
   border: 1px solid rgba(160, 100, 255, 0.2);
   color: #fff;
-  width: 18vw;
-  height: 9vh;
+  width: min(90vw, 360px);
+  min-height: 58px;
+  padding: 10px 16px;
   background: rgba(60, 20, 100, 0.35);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 4px 24px rgba(120, 60, 220, 0.25);
-  font-size: 15pt;
+  font-size: clamp(15px, 1.2vw, 20px);
   cursor: pointer;
   border-radius: 10px;
 }
 #open_mail_center {
   border: 1px solid rgba(160, 100, 255, 0.2);
   color: #fff;
-  width: 18vw;
-  height: 9vh;
+  width: min(90vw, 360px);
+  min-height: 58px;
   margin-left: auto;
   margin-right: auto;
   background: rgba(60, 20, 100, 0.35);
@@ -64,12 +81,23 @@ body {
   cursor: pointer;
   border-radius: 10px;
 }
+h1 {
+  font-size: clamp(32px, 6vw, 58px);
+  line-height: 1.08;
+  overflow-wrap: anywhere;
+}
 h2 {
   text-align: left;
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.12;
+  margin: 0 0 14px;
+  overflow-wrap: anywhere;
 }
 p {
-  width: 500px;
+  width: min(100%, 500px);
+  max-width: 100%;
   text-align: justify;
+  overflow-wrap: anywhere;
 }
 a {
   color: #fff;
@@ -86,6 +114,7 @@ a:visited {
 
 .img-link {
   display: inline-block;
+  max-width: 100%;
   text-decoration: none;
 }
 .img-link img {
@@ -102,6 +131,7 @@ a:visited {
   flex-direction: column;
   align-items: center;
   gap: 6px;
+  min-width: 0;
 }
 .media-wrap > div {
   display: block;
@@ -110,35 +140,62 @@ a:visited {
 .media-wrap img {
   display: block;
   max-height: calc((620px - 220px) / var(--imgs, 1));
+  max-width: 100%;
   width: auto;
   margin: 0 auto;
 }
 
+.under-element > img,
+.under-element .img-link img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
+.under-element iframe {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 16 / 10;
+  height: auto;
+  margin: 0 auto;
+}
+
 .codesource {
-  position:absolute;
+  position:static;
   display: flex;
   flex-flow: column;
-  bottom:0;
-  left:0;
-  right:0;
+  margin-top: auto;
+  padding-top: 18px;
   gap: 5px;
 }
 
 .link-img-text {
-  font-size: 18px;
+  font-size: clamp(16px, 1.4vw, 19px);
   font-weight: bold;
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
   column-gap: 5px;
   width: fit-content;
+  max-width: 100%;
   margin-left:auto;
   margin-right:auto;
   color: #000 !important;
+  overflow-wrap: anywhere;
+}
+
+.link-img-text > div {
+  min-width: 0;
 }
 
 footer {
   text-align: center;
-  height:100px;
+  min-height:100px;
+  padding: 0 clamp(14px, 3vw, 28px) 24px;
 }
 
 @keyframes move {
@@ -355,82 +412,80 @@ footer {
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 1084px) {
-  body {
-    font-size: 48px;
+  .element {
+    grid-template-columns: 1fr;
   }
-  h1 {
-    font-size: 48px;
-    word-break: break-word;
-  }
-  h2 {
-    font-size: 56px;
-    word-break: break-word;
-  }
+
   p {
-    width: 90vw;
-    text-align: justify;
-    font-size: 48px;
+    width: 100%;
   }
+
   #open_preferences_center {
-    width: 90vw;
-    height: 8vh;
     box-shadow: 12px 12px 12px rgba(0,0,0,.4);
     border-radius: 20px;
-    font-size: 48px !important;
   }
+
   #open_mail_center img {
-    width: 75vw;
-    height: 6vh;
+    max-width: min(75vw, 300px);
+    height: auto;
   }
+
   #open_mail_center {
-    width: 90vw;
-    height: 8vh;
     box-shadow: 12px 12px 12px rgba(0,0,0,.4);
     border-radius: 20px;
-    font-size: 48px !important;
   }
+
   .under-element {
-    height: auto;
-    min-height: 400px;
-    width: 90vw;
+    min-height: 0;
+    width: 100%;
     box-shadow: 12px 12px 12px rgba(0,0,0,.4);
     border-radius: 20px;
     padding-bottom: 20px;
   }
-  .codesource {
-    position: static;
-    margin-top: 30px;
-  }
-  .under-element img {
-    width: 95% !important;
-  }
-  .under-element iframe {
-    width: 95% !important;
-    height : 28%;
-  }
+
   .link-img-text {
-    font-size: 48px !important;
-    padding-bottom: 10px;
     max-width: calc(90vw - 40px);
     flex-wrap: wrap;
   }
+
   .link-img-text > div {
     min-width: 0;
     overflow-wrap: break-word;
     word-break: break-word;
   }
+
   .link-img-text img {
-    width: 48px !important;
-  }
-  .media-wrap img {
-    max-height: calc((1800px - 220px) / var(--imgs, 1));
-  }
-  .under-element img.img-portrait {
-    width: auto !important;
-    max-height: 270px;
+    width: 22px !important;
+    height: auto;
   }
 
+  .media-wrap img {
+    max-height: none;
+  }
+
+  .under-element img.img-portrait {
+    width: auto !important;
+    max-height: min(360px, 70vh);
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+  .mypage {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .under-element {
+    padding: 12px;
+  }
+
+  .link-img-text {
+    justify-content: center;
+  }
 }
