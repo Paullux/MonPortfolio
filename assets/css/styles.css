@@ -476,6 +476,19 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
+  body {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
   .mypage {
     padding-left: 10px;
     padding-right: 10px;
@@ -486,6 +499,7 @@ footer {
   }
 
   .link-img-text {
+    font-size: 15px;
     justify-content: center;
   }
 }
