@@ -39,7 +39,7 @@ function renderCard(p) {
     const imgCount = p.media.filter(m => m.type === 'img').length;
     const items = p.media.map(renderMediaItem).join('');
     mediaHTML = imgCount > 1
-      ? `<div class="media-wrap" style="--imgs:${imgCount}">${items}</div>`
+      ? `<div class="media-wrap" style="--imgs:${imgCount}">${p.media.map(m => `<div>${renderMediaItem(m)}</div>`).join('')}</div>`
       : items;
   } else if (p.image) {
     mediaHTML = renderImage(p.image);

@@ -99,9 +99,15 @@ a:visited {
   align-items: center;
   gap: 6px;
 }
+.media-wrap > div {
+  display: block;
+  text-align: center;
+}
 .media-wrap img {
+  display: block;
   max-height: calc((620px - 220px) / var(--imgs, 1));
   width: auto;
+  margin: 0 auto;
 }
 
 .codesource {
