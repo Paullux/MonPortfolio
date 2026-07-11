@@ -8,6 +8,7 @@ RUN rm -rf /usr/share/nginx/html/*
 COPY index.html /usr/share/nginx/html/
 COPY robots.txt sitemap.xml /usr/share/nginx/html/
 COPY assets/ /usr/share/nginx/html/assets/
+COPY data/ /usr/share/nginx/html/data/
 COPY cv/ /usr/share/nginx/html/cv/
 
 # Étape 4 : Configuration Nginx (le .htaccess est ignoré par Nginx)
