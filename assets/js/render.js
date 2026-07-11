@@ -3,16 +3,19 @@ import { projects } from '../../data/projects.js';
 function renderImage(image) {
   const { src, alt, href, width, height, portrait, style: customStyle } = image;
   let attrs;
+  let extraClass = '';
   if (customStyle) {
     attrs = `style="${customStyle}"`;
+    extraClass = ' class="img-portrait"';
   } else if (portrait) {
     attrs = `style="max-height:270px;width:auto;"`;
+    extraClass = ' class="img-portrait"';
   } else if (height && !width) {
     attrs = `height="${height}"`;
   } else {
     attrs = `width="${width || 500}"${height ? ` height="${height}"` : ''}`;
   }
-  const img = `<img ${attrs} src="${src}" alt="${alt ?? ''}">`;
+  const img = `<img${extraClass} ${attrs} src="${src}" alt="${alt ?? ''}">`;
   return href ? `<a class="img-link" href="${href}" target="_blank">${img}</a>` : img;
 }
 

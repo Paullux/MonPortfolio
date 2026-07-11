@@ -403,5 +403,9 @@ footer {
   .media-wrap img {
     max-height: calc((1800px - 220px) / var(--imgs, 1));
   }
+  .under-element img.img-portrait {
+    width: auto !important;
+    max-height: 270px;
+  }
 
 }
