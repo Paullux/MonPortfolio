@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen" href="styles.css" />
-    <link rel="stylesheet" media="print" href="print.css" />
+    <link rel="stylesheet" media="screen" href="styles.css?v=cv-download" />
+    <link rel="stylesheet" media="print" href="print.css?v=a4-bottom" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <title>CV Paul WOISARD</title>
@@ -15,7 +15,7 @@
         <div class="left">
             <section class="profil">
                 <h3>PROFIL</h3>
-                <p class="situation">46 ans - Divorcé</p>
+                <p class="situation" data-birthdate="1979-06-18">47 ans - Divorcé</p>
                 <p class="deplacement">Titulaire du Permis B<br>Possède un véhicule</p>
                 <p class="rqth">Reconnaissance<br>de travailleur handicapé</p>
                 <p class="phone"><i class="fa-solid fa-phone"></i>  06 15 17 73 00</p>
@@ -23,6 +23,11 @@
                 <p class="location"><i class="fa-sharp fa-solid fa-location-dot"></i>  Tours, France</p>
                 <p class="mail"><i class="fa-regular fa-file-code"></i>  Mon CV en html<br/><a href="https://paulwoisard.fr/cv/index.html">paulwoisard.fr/cv/</a></p>
                 <p class="website"><i class="fa-solid fa-globe"></i>  Mon Site Web<br/><a href="https://paulwoisard.fr/index.html">paulwoisard.fr/</a></p>
+                <p class="download-cv-wrap">
+                    <a class="download-cv" href="../assets/pdf/cv-paul-woisard.pdf" download>
+                        <i class="fa-solid fa-file-arrow-down"></i> Télécharger le CV
+                    </a>
+                </p>
             </section>
             <section class="lang">
                 <h3>LANGUES</h3>
@@ -122,5 +127,26 @@
             </div>
         </div>
     </div>
+    <script>
+        (function () {
+            const situation = document.querySelector(".situation[data-birthdate]");
+            if (!situation) {
+                return;
+            }
+
+            const birthDate = new Date(situation.dataset.birthdate + "T00:00:00");
+            const today = new Date();
+            let age = today.getFullYear() - birthDate.getFullYear();
+            const birthdayHasPassed =
+                today.getMonth() > birthDate.getMonth() ||
+                (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+
+            if (!birthdayHasPassed) {
+                age -= 1;
+            }
+
+            situation.textContent = age + " ans - Divorcé";
+        })();
+    </script>
 </body>
 </html>

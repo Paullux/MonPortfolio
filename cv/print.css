@@ -10,7 +10,7 @@
 
 @page {
     size: A4;
-    margin: 5mm;
+    margin: 0;
 }
 
 @page :blank {
@@ -31,33 +31,58 @@ h1 {
 }
 
 body {
-    width: 100vw;
-    height: 107vh;
+    width: auto;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     background-color: white;
     overflow-wrap: break-word;
-    font-size: 0.9em;
+    font-size: 0.86em;
+    line-height: 1.22;
+}
+
+p,
+ul {
+    margin-top: 0.45em;
+    margin-bottom: 0.45em;
+}
+
+li {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+h3 {
+    margin-top: 0.7em;
+    margin-bottom: 0.55em;
+}
+
+h4 {
+    margin-top: 0.35em;
+    margin-bottom: 0.45em;
 }
 
 .monCVTot {
     display: grid;
     grid-template-columns: 25% 75%;
-    height: 100%;
+    height: 100vh;
+    min-height: 100vh;
 }
 
 .header {
     display: grid;
-    grid-template-columns: 86% 16%;
-    height: 8vh;
-    width:110%;
+    grid-template-columns: 1fr 30mm;
+    align-items: center;
+    height: 32mm;
+    width:100%;
     background-color: var(--greybackground);
-    padding-top: 50px;
+    padding-top: 0;
 }
 
 h1 {
-    margin-top: -5%;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 2%;
     padding-right: auto;
     color: var(--greydark);
@@ -65,7 +90,8 @@ h1 {
 }
 
 .header .separateur {
-    margin-top: -6%;
+    margin-top: 1mm;
+    margin-bottom: 1mm;
     margin-left: 2%;
     background-color: var(--greylight);
     width: 8vw;
@@ -73,17 +99,22 @@ h1 {
 }
 
 .header h2 {
-    margin-top: -3%;
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--greylight);
     font-size: min(2vw, 2em);
     padding-left: 2%;
 }
 
 .maPP {
-    width: 75%;
+    display: block;
+    width: 24mm;
+    max-width: 100%;
+    max-height: 28mm;
     margin-right: 0;
-    margin-top: -35px;
+    margin-top: 0;
     border-radius: 25%;
+    object-fit: contain;
 }
 
 .monCV {
@@ -95,13 +126,14 @@ h1 {
 
 .left {
     width:100%;
-    height: 100%;
+    height: 100vh;
+    min-height: 100vh;
     background-color: var(--greybackground);
     padding-left: 10px;
 }
 
 .left h3 {
-    padding-top: 20px;
+    padding-top: 12px;
     color: var(--greydark);
     text-align: center;
 }
@@ -112,6 +144,17 @@ h1 {
 
 .profil i {
     color: var(--greydark);
+}
+
+.left a:link,
+.left a:visited,
+.left a:hover,
+.left a:active {
+    color: var(--greytext);
+}
+
+.download-cv-wrap {
+    display: none;
 }
 
 .lang p {
@@ -160,7 +203,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: -20px;
+    margin-top: 0;
 }
 
 .niveau1 {
@@ -422,7 +465,7 @@ h1 {
 .right {
     background-color: var(--white);
     width: 100%;
-    height: max(100%, 100vh);
+    height: auto;
 }
 
 .right h3 {
@@ -475,7 +518,7 @@ h1 {
 
 .xpentreprise p {
     display: table-cell;
-    padding: 10px;
+    padding: 7px;
     font-size: small;
     margin-top: -25px;
 }
@@ -491,7 +534,7 @@ h1 {
 
 .formation p {
     display: table-cell;
-    padding: 10px;
+    padding: 6px;
 }
 
 .formation p span{
