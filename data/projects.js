@@ -142,7 +142,7 @@ export const projects = [
   {
     title: "Bit-Scripts : myMatrix-Web",
     description: "Des effets à la Matrix pour navigateur web.",
-    image: { src: "https://github.com/Bit-Scripts/myMatrix-Web/raw/main/myMatrix.GIF", alt: "myMatrix-Web", width: 250 },
+    image: { src: "https://github.com/Bit-Scripts/myMatrix-Web/raw/main/myMatrix.GIF", alt: "myMatrix-Web", href: "https://bit-scripts.github.io/myMatrix-Web/", width: 250 },
     links: [
       { href: "https://github.com/Bit-Scripts/myMatrix-Web", icon: GH, label: "code source" },
     ],
@@ -158,7 +158,7 @@ export const projects = [
   {
     title: "Bit-Scripts : 3D-Earth",
     description: "Une page web avec Three.js qui affiche la Terre dans l'espace en 3D.",
-    image: { src: "https://github.com/Bit-Scripts/3D-Earth/raw/main/3D%20Earth.GIF", alt: "3D-Earth", width: 500 },
+    image: { src: "https://github.com/Bit-Scripts/3D-Earth/raw/main/3D%20Earth.GIF", alt: "3D-Earth", href: "https://bit-scripts.github.io/3D-Earth/", width: 500 },
     links: [
       { href: "https://github.com/Bit-Scripts/3D-Earth", icon: GH, label: "code source" },
     ],
@@ -182,7 +182,7 @@ export const projects = [
   {
     title: "Bit-Scripts : midi-to-singing",
     description: "Transformez vos fichiers MIDI en chant grâce à des fichiers de paroles.",
-    image: { src: "https://github.com/Bit-Scripts/midi-to-singing/raw/main/Logo.webp", alt: "midi-to-singing", width: 300 },
+    image: { src: "https://github.com/Bit-Scripts/midi-to-singing/raw/main/Logo.webp", alt: "midi-to-singing", href: "https://bit-scripts.github.io/", width: 300 },
     links: [
       { href: "https://github.com/Bit-Scripts/midi-to-singing", icon: GH, label: "code source" },
     ],
@@ -198,7 +198,7 @@ export const projects = [
   {
     title: "Bit-Scripts : MPRIS Discord Presence",
     description: "Affiche dans votre statut Discord le titre musical en cours de lecture sur Linux, via le protocole MPRIS (compatible avec la plupart des lecteurs Linux).",
-    image: { src: "https://bit-scripts.github.io/images/MPRIS.png", alt: "MPRIS Discord Presence", width: 500 },
+    image: { src: "https://bit-scripts.github.io/images/MPRIS.png", alt: "MPRIS Discord Presence", href: "https://bit-scripts.github.io/index.html", width: 500 },
     links: [
       { href: "https://github.com/Bit-Scripts/MPRIS-Discord-Presence", icon: GH, label: "code source" },
     ],
@@ -206,7 +206,7 @@ export const projects = [
   {
     title: "Bit-Scripts : APPIPTV Freebox &amp; HDHomeRun",
     description: "Une application de streaming IPTV avec interface graphique PyQt6 pour l'intégration avec VLC, compatible Freebox et HDHomeRun.",
-    image: { src: "https://bit-scripts.github.io/images/IPTV.png", alt: "APPIPTV", width: 500 },
+    image: { src: "https://bit-scripts.github.io/images/IPTV.png", alt: "APPIPTV", href: "https://bit-scripts.github.io/index.html", width: 500 },
     links: [
       { href: "https://github.com/Bit-Scripts/APPIPTV_Freebox_et_HDHomeRun", icon: GH, label: "code source" },
     ],
@@ -391,7 +391,7 @@ export const projects = [
   {
     title: "AMDGPU pro",
     description: `J'ai participé à l'élaboration du port d'Ubuntu sur ArchLinux du pilote AMDGPU pro (pilote des cartes graphiques AMD sous Linux).<br><br>⚠️ N'est plus à jour. Allez sur AUR pour obtenir ce pilote`,
-    image: { src: "https://ubunlog.com/wp-content/uploads/2017/08/amdgpu-pro.jpg", alt: "amdgpu-pro", width: 500 },
+    image: { src: "https://ubunlog.com/wp-content/uploads/2017/08/amdgpu-pro.jpg", alt: "amdgpu-pro", href: "https://aur.archlinux.org/pkgbase/amdgpu-pro-installer/", width: 500 },
     links: [
       { href: "https://github.com/Paullux/archlinux-amdgpu", icon: GH, label: "code source" },
     ],
