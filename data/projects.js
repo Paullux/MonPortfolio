@@ -166,7 +166,7 @@ export const projects = [
   {
     title: "Bit-Scripts : PDF-Equilibrist",
     description: "Un éditeur PDF open source.",
-    image: { src: "https://github.com/Bit-Scripts/PDF-Equilibrist/raw/main/assets/logo/PDF-Equilibrist-logo.png", alt: "PDF-Equilibrist", width: 300, href: "https://bit-scripts.github.io/PDF-Equilibrist/" },
+    image: { src: "https://github.com/Bit-Scripts/PDF-Equilibrist/raw/main/assets/logo/PDF-Equilibrist-logo.png", alt: "PDF-Equilibrist", width: 300, href: "https://pdf-equilibrist.org/" },
     links: [
       { href: "https://github.com/Bit-Scripts/PDF-Equilibrist", icon: GH, label: "code source" },
     ],
