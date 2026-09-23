@@ -32,6 +32,15 @@ export const projects = [
     ],
   },
   {
+    title: "Bit-Scripts : PDF-Equilibrist",
+    description: "Éditeur PDF de bureau, gratuit et open source, développé en Python avec PyQt6 et PyMuPDF. Lecture, modification, annotation, conversion et protection AES-256 — entièrement en local, sans cloud ni télémétrie. Disponible sur Windows, Ubuntu (PPA), Fedora (Copr) et Arch Linux (AUR).",
+    image: { src: "https://github.com/Bit-Scripts/PDF-Equilibrist/raw/main/assets/images/PDF-Equilibrist.png", alt: "PDF-Equilibrist", href: "https://pdf-equilibrist.org/", width: 500 },
+    links: [
+      { href: "https://pdf-equilibrist.org/", icon: "https://pdf-equilibrist.org/favicon.ico", label: "site officiel" },
+      { href: "https://github.com/Bit-Scripts/PDF-Equilibrist", icon: GH, label: "code source" },
+    ],
+  },
+  {
     title: "Vehemence Squadron",
     description: "Prototype de rail shooter en space opera développé en Three.js et Vite. Pilotez un chasseur de l'escadron Aquila lancé depuis le porte-vaisseaux Véhémence pour rouvrir une route commerciale attaquée par l'Hégémonie du Vide.",
     image: { src: "https://paullux.github.io/vehemence-squadron/cinematics/second_mission_end/red_corona_escape_ai.png", alt: "Vehemence Squadron", href: "https://paullux.github.io/vehemence-squadron/", width: 500 },
@@ -169,14 +178,6 @@ export const projects = [
     image: { src: "https://github.com/Bit-Scripts/3D-Earth/raw/main/3D%20Earth.GIF", alt: "3D-Earth", href: "https://bit-scripts.github.io/3D-Earth/", width: 500 },
     links: [
       { href: "https://github.com/Bit-Scripts/3D-Earth", icon: GH, label: "code source" },
-    ],
-  },
-  {
-    title: "Bit-Scripts : PDF-Equilibrist",
-    description: "Un éditeur PDF open source.",
-    image: { src: "https://github.com/Bit-Scripts/PDF-Equilibrist/raw/main/assets/logo/PDF-Equilibrist-logo.png", alt: "PDF-Equilibrist", width: 300, href: "https://pdf-equilibrist.org/" },
-    links: [
-      { href: "https://github.com/Bit-Scripts/PDF-Equilibrist", icon: GH, label: "code source" },
     ],
   },
   {
