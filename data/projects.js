@@ -24,6 +24,14 @@ export const projects = [
     ],
   },
   {
+    title: "Social Hub Dashboard",
+    description: "Centralisez et suivez vos contenus YouTube, TikTok et Instagram dans un seul tableau de bord. Visualisez les performances (vues, likes, commentaires, partages) et comparez l'impact de vos créations sur chaque plateforme.",
+    image: { src: "https://github.com/Paullux/SocialHubDashboard/raw/main/public/og.jpg", alt: "Social Hub Dashboard", href: "https://social-hub.fr/", width: 500 },
+    links: [
+      { href: "https://github.com/Paullux/SocialHubDashboard", icon: GH, label: "code source" },
+    ],
+  },
+  {
     title: "Vehemence Squadron",
     description: "Prototype de rail shooter en space opera développé en Three.js et Vite. Pilotez un chasseur de l'escadron Aquila lancé depuis le porte-vaisseaux Véhémence pour rouvrir une route commerciale attaquée par l'Hégémonie du Vide.",
     image: { src: "https://paullux.github.io/vehemence-squadron/cinematics/second_mission_end/red_corona_escape_ai.png", alt: "Vehemence Squadron", href: "https://paullux.github.io/vehemence-squadron/", width: 500 },
