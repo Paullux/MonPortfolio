@@ -8,6 +8,8 @@ RUN rm -rf /usr/share/nginx/html/*
 COPY index.html /usr/share/nginx/html/
 COPY robots.txt sitemap.xml /usr/share/nginx/html/
 COPY assets/ /usr/share/nginx/html/assets/
+ARG GIT_SHA=unknown
+RUN echo "$GIT_SHA" > /dev/null
 COPY data/ /usr/share/nginx/html/data/
 COPY cv/ /usr/share/nginx/html/cv/
 
